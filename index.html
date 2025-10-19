@@ -2,8 +2,7 @@
 <HTML>
  <HEAD>
   <TITLE> 爱你一万年 </TITLE>
-  <p>覃健恩
-  </p>
+  
   <META NAME="Generator" CONTENT="EditPlus">
   <META NAME="Author" CONTENT="">
   <META NAME="Keywords" CONTENT="">
@@ -20,10 +19,21 @@ canvas {
   width: 100%;
   height: 100%;
 }
+   p{
+  position: relative; /* 关键：添加相对定位，使 z-index 生效 */
+  z-index: 1; /* 确保层级高于 canvas（canvas 默认为 z-index: auto，层级更低） */
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  /* 可选：添加文字阴影增强可读性 */
+  text-shadow: 0 0 5px #000;
+}
   </style>
  </HEAD>
  
  <BODY>
+  <p>覃建恩</p>
   <canvas id="pinkboard"></canvas>
   <script>
   /*
